@@ -205,16 +205,10 @@ You have now successfully installed and started Docker Engine.
 
 ## Ejecutar Neo4J
 
-1. Creamos la carpeta para persistir la información
+1. Descargamos la imagen:
 
 ```bash
-mkdir -p $HOME/neo4j/data
-```
-
-2. Descargamos la imagen:
-
-```bash
-docker run --publish=7474:7474 --publish=7687:7687  --volume=$HOME/neo4j/data:/data   neo4j
+docker run --publish=7474:7474 --publish=7687:7687  -d   neo4j
 ```
 
 3. Buscamos nuestra IP publica en el panel de Digital Ocean.
