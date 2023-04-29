@@ -171,26 +171,6 @@ Before you install Docker Engine for the first time on a new host machine, you n
      $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     ```
     
-    To install a specific version of Docker Engine, start by listing the available versions in the repository:
-    
-    ```
-    # List the available versions:
-    $ apt-cache madison docker-ce | awk '{ print $3 }'
-    
-    5:20.10.16~3-0~ubuntu-jammy
-    5:20.10.15~3-0~ubuntu-jammy
-    5:20.10.14~3-0~ubuntu-jammy
-    5:20.10.13~3-0~ubuntu-jammy
-    ```
-    
-    Select the desired version and install:
-    
-    ```
-    $ VERSION_STRING=5:20.10.13~3-0~ubuntu-jammy
-    $ sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
-    ```
-    
-    ___
     
 3.  Verify that the Docker Engine installation is successful by running the `hello-world` image:
     
